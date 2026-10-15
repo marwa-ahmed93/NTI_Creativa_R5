@@ -1,0 +1,314 @@
+<html>
+  <head> </head>
+  <body>
+
+
+
+
+    <h1 style="color: red; text-align: center">Web Design and development</h1>
+
+<a href="about.html">About</a>
+
+    <h2>Web Design</h2>
+    <p style="background: burlywood; color: white">
+      Lorem ipsum dolor sit amet consectetur <br />
+      adipisicing elit. Sunt, modi.
+    </p>
+
+    <hr />
+
+    <h2>Web development</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, esse?</p>
+
+    <!-- tag type
+1-nested tag 
+2-empty tag attribute
+-->
+
+
+
+
+    <a
+      target="_blank"
+      href="https://ar.wikipedia.org/wiki/%D8%A3%D8%AD%D9%85%D8%AF_%D8%B2%D9%88%D9%8A%D9%84"
+    >
+      <img src="img/images.jpeg" width="400" alt="dr/Ahemd zewail" />
+    </a>
+
+    <hr />
+
+    <!----  List
+1-ol
+2-ul
+3-dl
+-->
+
+    <ul type="square">
+      <li>Html</li>
+      <li>
+        Css
+        <ul>
+          <li>Border</li>
+          <li>Padding</li>
+          <li>margin</li>
+        </ul>
+      </li>
+      <li>Js</li>
+      <li>PHP</li>
+    </ul>
+
+    <hr />
+
+    <ol type="a" start="5">
+      <li>PHP</li>
+      <li>
+        DB
+        <ul>
+          <li>Border</li>
+          <li>Padding</li>
+          <li>margin</li>
+        </ul>
+      </li>
+
+      <li>OOP</li>
+      <li>MVC</li>
+    </ol>
+
+    <hr />
+
+    <dl>
+      <dt>html</dt>
+      <dd>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi,
+        doloremque!
+      </dd>
+    </dl>
+
+    <hr />
+
+    <!---------Tables----------->
+
+    <table border="1">
+      <thead>
+        <th>name</th>
+        <th colspan="2">age & email</th>
+
+        <th>title</th>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>ahmed</td>
+          <td>20</td>
+          <td>ahmed@gmail.com</td>
+          <td rowspan="2">doctor</td>
+        </tr>
+
+        <tr>
+          <td>hassen</td>
+          <td>20</td>
+          <td>hassen@gmail.com</td>
+        </tr>
+
+        <tr>
+          <td>mohamed</td>
+          <td>25</td>
+          <td>mo@gmail.com</td>
+          <td>engineer</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr />
+
+    <!---------- Styling attribute  --------------->
+
+    <!-------color ------>
+
+    <p style="color: #8f3c13; text-align: center">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, dolore!
+    </p>
+
+    <!----    RGB 
+hexadecimal   16    123456789abcdef
+
+red    ff  00    00  => f 0 0
+black  00   00   00 => 0 0 0
+white  ff   ff   ff  => fff
+
+
+ -->
+
+
+
+
+
+
+
+
+
+
+
+<hr>
+
+
+
+
+<!----     Forms   
+int x = 5 
+
+1- type
+2- name
+3- value
+-->
+
+
+
+
+<form> 
+<label for="">name: </label>
+<input type="text" name="username" required placeholder="enter name">*
+
+<br>
+<br>
+
+<label for="">email: </label>
+<input type="email" name="email" placeholder="enter email">
+
+<br>
+<br>
+
+
+
+<label for="">password: </label>
+<input type="password" name="password" placeholder="enter password">
+
+<br>
+<br>
+
+
+<label for="">age: </label>
+<input type="number" name="age" placeholder="enter age">
+
+<br>
+<br>
+
+
+<label for="">birthdate: </label>
+<input type="date" name="birthdate" >
+
+<br>
+<br>
+
+
+
+<label for="">birthdate: </label>
+<input type="datetime-local" name="birthdate" >
+
+<br>
+<br>
+
+
+<label for="">color: </label>
+<input type="color" name="birthdate" >
+
+<br>
+<br>
+
+
+<label for="">birthdate: </label>
+<input type="file" name="birthdate" >
+
+<br>
+<br>
+
+
+
+
+<input type="radio" name="gender" value="male"><label for="">Male</label>
+<input type="radio" name="gender" value="female"><label for="">Female</label>
+
+
+
+<br>
+<br>
+
+
+
+<input type="checkbox" name="lang" value="php"><label for="">php</label>
+<input type="checkbox" name="lang" value="js"><label for="">js</label>
+
+
+
+<br>
+<br>
+
+
+
+<select name="city" id="">
+    <option value="cairo">cairo</option>
+    <option value="cairo">cairo</option>
+    <option value="cairo">cairo</option>
+    <option value="cairo">cairo</option>
+</select>
+
+
+
+<br>
+<br>
+
+
+
+
+<textarea rows="20" cols="50" name="" id=""></textarea>
+
+
+<button type="submit"> submit</button>
+</form>
+
+
+
+<hr>
+
+
+<!----         media => video audio ifram         -->
+
+
+
+<!-- <audio controls loop muted autoplay>
+    <source src="img/001.mp3">
+</audio> -->
+
+
+<!-- 
+<video controls loop muted autoplay width="500">
+    <source src="img/WhatsApp Video 2024-05-04 at 6.33.40 PM.mp4">
+</video>
+ -->
+
+<!-- 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/salY_Sm6mv4?si=CqhSnLXmoC9g8ELj" 
+title="YouTube video player" frameborder="0"
+ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+ -->
+
+
+
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.0331721212433!2d31.33139472564268!3d30.06458361761831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583e42e4f61a9d%3A0xb87f86d33b2fae3c!2sIT%20Gate%20Academy!5e0!3m2!1sar!2seg!4v1792054824168!5m2!1sar!2seg"
+ width="800" 
+ height="450"
+  style="border:0;"
+   allowfullscreen="" 
+   loading="lazy" 
+referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+
+
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27477.70261977695!2d31.480217599999992!3d30.585651199999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7f0524fff8a13%3A0x1d3df24b917a31b8!2z2KzYp9mF2LnYqSDYp9mE2LLZgtin2LLZitmC!5e0!3m2!1sar!2seg!4v1792054967254!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+
+  </body>
+</html>

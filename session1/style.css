@@ -1,0 +1,126 @@
+
+
+
+
+.item1{
+    color: tomato;
+    
+}
+/* .item-two{
+    text-align: center;
+} */
+
+/* p{
+    display: inline-block;
+    background-color: tan;
+    width: 49%;
+} */
+
+h1{
+text-align: center;
+/* background-color: azure; */
+}
+
+.test{
+    /* background-color: tomato; */
+    width: 32.3%;
+    text-align: center;
+    display: inline-block;
+}
+.test img{
+    width: 100%;
+}
+
+.parent{
+    background-color: teal;
+    width: 90%;
+    margin: auto;
+}
+.parent span{
+    color: blue;
+}
+
+/* default value
+1- width   100%
+2- height auto
+3-color black
+4-background  transparent
+
+*/
+
+
+
+/*inline & block element  */ 
+
+a{
+    background-color: tomato;
+    display: block;
+    width: 30%;
+}
+
+
+
+
+/*    
+ border
+
+    1-color
+    2-style
+    3-width            
+    
+    */
+
+
+
+    .bord{
+        width: 300px;
+        height: 300px;
+        background-color: blue;
+
+        /* border-color: tomato;
+        border-style: dotted;
+        border-width: 10px; */
+
+        /* border: 10px solid tomato; */
+
+
+        /* border-bottom: 10px solid red;
+        border-top: 10px solid red;
+        border-left: dotted 10px red;
+        border-right: dotted 10px red; */
+
+
+        border-radius: 50%;
+        /* border-top-left-radius: 50% ;
+        border-bottom-right-radius: 50%; */
+    }
+
+
+
+    /*  spacing*/ 
+
+    /*
+    margin  
+    top  right but left
+    */
+
+
+    .space{
+        background-color: tomato;
+        width: 200px;
+        height: 200px;
+
+        /* margin-top: 100px;
+        margin-left: 200px;
+        margin-right: 100px;
+        margin-bottom: 100px; */
+
+
+        margin: 100px auto   ;
+
+        /* padding-top: 10px;
+        padding-left: 10px; */
+
+        padding: 12px;
+        text-align: center;
+    }
