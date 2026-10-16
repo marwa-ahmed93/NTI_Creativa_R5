@@ -1,0 +1,218 @@
+
+*{
+        box-sizing: border-box;
+
+}
+
+/*  Background:image 
+ background-size: 100% 100%;
+   background-size: cover;
+*/
+.item{
+    background-color: blueviolet;
+    width: 800px;
+    height: 850px;
+    border: 8px solid red;
+
+
+    background-image: url(../images/bgs.jpg);
+    background-size: cover;
+    background-position: center center ;
+    background-attachment: fixed;
+
+
+/* background-image:  url(../images/taxi.png)  ,  url(../images/images.jpg) ;
+background-repeat: no-repeat ,  repeat-x  ;
+
+background-position:  center  center , top  left  ; */
+}
+.item p {
+    color: white;
+    font-size: 20px;
+}
+
+
+
+
+/*   floating
+  display: inline-block;  
+*/ 
+
+
+.parent{
+    /* background-color: brown; */
+    width: 92%;
+    margin: 50px auto;
+}
+.chiled{
+    
+    text-align: center;
+    width: 25%;
+    float: left;
+    padding: 18px;
+ /* border: 1px solid black; */
+    /* margin: 10px; */
+}
+.inner-item{
+background-color: violet;
+padding: 10px;
+border-radius: 15px;
+}
+.chiled img{
+    border-radius: 50%;
+}
+
+.line{
+    width: 30%;
+    height: 5px;
+    background-color: gray;
+    margin: auto;
+}
+.chiled hr{
+    width: 30%;
+    height: 5px;
+    background-color: gray;
+  
+}
+
+.clr{
+    clear: both;
+}
+
+
+
+
+.test{
+    background-color: tomato;
+    width: 200px;
+    height: 200px;
+    padding: 8px;
+}
+.test p{
+    background-color: yellowgreen;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RWD    
+ 600> xs
+  600 >sm> 768
+  768> md >992
+  992> lg >1200
+       xl>1200
+
+*/   
+
+
+/* @media screen and (max-width: 768px) {
+
+    body{
+       background-color: tomato; 
+    }
+
+.chiled{
+        width: 50%;
+    
+}
+
+    
+} */
+
+
+
+ @media  (min-width: 1200px) {
+ 
+.chiled{
+        width: 25%;
+    
+}
+ 
+}
+
+ @media  (max-width: 1199px) and (min-width: 992px) {
+
+ 
+.chiled{
+        width: 25%;
+    
+}
+ 
+}
+
+
+@media  (max-width: 991px) and (min-width: 768px) {
+
+ 
+.chiled{
+        width: 50%;
+    
+}
+ 
+}
+
+@media  (max-width: 767px) and (min-width: 600px) {
+
+ 
+.chiled{
+        width: 100%;
+    
+}
+ 
+}
+
+
+@media  (max-width: 599px)  {
+
+ 
+.chiled{
+        width: 100%;
+    
+}
+.chiled img{
+    width: 80%;
+}
+ 
+} 
+
+
+/* 
+@media  (min-width: 400px) {
+
+
+    body{
+        background-color: tomato;
+    }
+}
+
+
+
+@media  (min-width: 600px) {
+
+.chiled
+{
+        width: 50%; 
+}
+
+
+   body{
+        background-color: green;
+    }
+} */
