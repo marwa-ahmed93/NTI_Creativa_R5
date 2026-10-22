@@ -1,0 +1,507 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.5.15,
+* Autoprefixer: v10.5.0
+* Browsers: last 4 version
+*/
+
+*{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; 
+    padding: 0;
+    margin: 0;
+}
+
+/************* Variables   *************************/
+
+
+
+
+/**************** After && Before  ******************************/
+h1{
+    text-align: center;
+    position: relative;
+}
+
+h1::after{
+    content: "";
+    background-color: blue;
+    width: 40%;
+    height: 3px ;
+    position: absolute;
+    top: 49%;
+    right: 5px;
+}
+h1::before{
+   content: "";
+    background-color: rgb(25, 0, 255);
+    width: 40%;
+    height: 3px ;
+    position: absolute;
+    top: 49%;
+    left:  5px;
+
+}
+
+
+.AB{
+    text-align: center;
+    border: 5px solid red;
+    width: 15%;
+    padding: 30px 15px;
+    position: relative;
+    /* border: 5px solid teal;
+    width: 15%;
+    padding: 30px 15px;
+    position: relative; */
+}
+.AB::after{
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    position: absolute;
+    left: 20px;
+    top: 80%;
+}
+
+.AB::before{
+    content: "";
+    width: 5px;
+    height: 30px;
+    background-color: red;
+    position: absolute;
+    left: 30px;
+    top: 80%;
+    z-index: 99999;
+}
+
+
+/* 
+.AB::after{
+    content: "";  
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    position: absolute;
+    left: 8px;
+    top: 80%;
+}
+
+.AB::before{
+    content: "";  
+    width: 5px;
+    height: 30px;
+    background-color: teal;
+    position: absolute;
+    left: 20px;
+    top: 80%;
+    z-index: 999999;
+} */
+
+
+
+/***********   variables*************************/
+
+
+ :root{
+
+    --main_color:tomato ;
+    --second_color : tan ;
+    --main_padding:20px ;
+    --font_size:20px ;
+     --border_radius:20px ; 
+
+
+} 
+
+html{
+        --main_color:red ;
+        --badel_main:green;
+    --second_color : white ;
+    --main_padding:20px ;
+    --font_size:20px ;
+     --border_radius:20px ; 
+/* 
+     font-size: 30px; */
+}
+
+.var{
+    width: 200px;
+    height: 200px;
+    background-color: var(--main_color , var(--badel_main ,  teal)) ;
+    border-radius: var(--border_radius);
+    padding: var(--main_padding);
+}
+.var p{
+    color: var(--second_color);
+    font-size: var(--font_size);
+}
+
+/* p{
+    color: tomato;
+} */
+
+
+
+
+
+
+/****************** animation ********************************************/
+
+.anim{
+    width: 200px;
+    height: 200px;
+    background-color: tan;
+    -webkit-animation-name:coloring ;
+            animation-name:coloring ;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+}
+
+@-webkit-keyframes coloring {
+    0%{  background-color: tan;  }
+    50%{ background-color: rgb(140, 210, 144);}
+    100%{ background-color: rgb(142, 20, 146);}
+}
+
+@keyframes coloring {
+    0%{  background-color: tan;  }
+    50%{ background-color: rgb(140, 210, 144);}
+    100%{ background-color: rgb(142, 20, 146);}
+}
+
+
+
+.header{
+    background-image: url(../images/business-2.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    -webkit-animation-name: slider;
+            animation-name: slider;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+
+}
+
+@-webkit-keyframes slider {
+    0%{  background-image: url(../images/business-2.jpg); height: 0; width: 0; }
+    25%{  background-image: url(../images/portfolio-1.jpg);height: 100vh; width: 100%;}
+    50%{background-image: url(../images/portfolio-3.jpg); height: 0; width: 0;}
+    75%{background-image: url(../images/shutterstock_277750193.jpg); height: 100vh; width: 100%;}
+    100%{background-image: url(../images/bgs.jpg); height: 0; width: 0;}
+}
+
+@keyframes slider {
+    0%{  background-image: url(../images/business-2.jpg); height: 0; width: 0; }
+    25%{  background-image: url(../images/portfolio-1.jpg);height: 100vh; width: 100%;}
+    50%{background-image: url(../images/portfolio-3.jpg); height: 0; width: 0;}
+    75%{background-image: url(../images/shutterstock_277750193.jpg); height: 100vh; width: 100%;}
+    100%{background-image: url(../images/bgs.jpg); height: 0; width: 0;}
+}
+
+
+
+
+
+.taxi{
+    /* transform: rotateY(180deg); */
+    position: relative;
+    -webkit-animation-name: moveTaxi;
+            animation-name: moveTaxi;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+}
+@-webkit-keyframes moveTaxi {
+ 0%{left: 0; top: 0; -webkit-transform: rotateY(180deg); transform: rotateY(180deg);}   
+ 50%{left: 800px; top: 0; -webkit-transform: rotateY(180deg); transform: rotateY(180deg);}
+ 51%{left: 800px; top: 0; -webkit-transform: rotateY(0); transform: rotateY(0);}
+ 100%{left: 0; top: 0;-webkit-transform: rotateY(0);transform: rotateY(0);}
+}
+@keyframes moveTaxi {
+ 0%{left: 0; top: 0; -webkit-transform: rotateY(180deg); transform: rotateY(180deg);}   
+ 50%{left: 800px; top: 0; -webkit-transform: rotateY(180deg); transform: rotateY(180deg);}
+ 51%{left: 800px; top: 0; -webkit-transform: rotateY(0); transform: rotateY(0);}
+ 100%{left: 0; top: 0;-webkit-transform: rotateY(0);transform: rotateY(0);}
+}
+
+
+
+.type{
+    text-align: center ;
+}
+.type::after{
+    content: " |";
+    /* background-color: red; */
+    color: red;
+    -webkit-animation: typed 5s ;
+            animation: typed 5s ;
+}
+@-webkit-keyframes typed {
+    0%{
+           content: "|";
+    }
+    2%{ content: " D |";}
+    4%{ content: " De |";}
+    6%{ content: " Des |";}
+    8%{ content: " Desi |";}
+    10%{ content: " Desig |";}
+    12%{ content: " Design |";}
+    14%{ content: " Desig |";}
+    16%{ content: " Desi |";}
+    18%{ content: " Des |";}
+    20%{ content: " De |";}
+    22%{ content: " D |";}
+    24%{ content: " |";}
+    26%{ content: " D |";}
+    28%{ content: " De |";}
+    30%{ content: " Dev |";}
+    32%{ content: " Devl |";}
+    34%{ content: " Devlo |";}
+    36%{ content: " Devlop |";}
+    38%{ content: " Devlopm |";}
+    40%{ content: " Devlopme |";}
+    42%{ content: " Devlopmen |";}
+    44%{ content: " Devlopment |";}
+}
+@keyframes typed {
+    0%{
+           content: "|";
+    }
+    2%{ content: " D |";}
+    4%{ content: " De |";}
+    6%{ content: " Des |";}
+    8%{ content: " Desi |";}
+    10%{ content: " Desig |";}
+    12%{ content: " Design |";}
+    14%{ content: " Desig |";}
+    16%{ content: " Desi |";}
+    18%{ content: " Des |";}
+    20%{ content: " De |";}
+    22%{ content: " D |";}
+    24%{ content: " |";}
+    26%{ content: " D |";}
+    28%{ content: " De |";}
+    30%{ content: " Dev |";}
+    32%{ content: " Devl |";}
+    34%{ content: " Devlo |";}
+    36%{ content: " Devlop |";}
+    38%{ content: " Devlopm |";}
+    40%{ content: " Devlopme |";}
+    42%{ content: " Devlopmen |";}
+    44%{ content: " Devlopment |";}
+}
+
+
+
+
+/*********************  css nesting ************************/
+.about{
+    &:hover{
+   background-color: gray;
+    }
+width: 500px;
+height: 400px;
+background-color: tan;
+
+
+.parent{
+width: 200px;
+height: 200px;
+background-color: rgb(9, 94, 23);
+.c{
+    width: 100px;
+    height: 100px;
+border: 2px solid red;
+border-radius: 50%;
+}
+}
+
+}
+
+/* .about:hover{
+ 
+} */
+
+
+
+
+
+/***************box-shadow ****************************/
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    margin: 50px auto;
+    -webkit-box-shadow: 22px 18px 38px 16px rgba(97,72,72,0.75);
+            box-shadow: 22px 18px 38px 16px rgba(97,72,72,0.75);
+
+}
+
+.text-s{
+    text-align: center;
+    /* text-shadow: 10px 10px 10px gray; */
+    text-shadow: 1px 28px 7px rgba(172,32,32,0.6);
+}
+
+/*
+css loaders
+badel 
+*/
+
+/********************** liner-gradient *************************************/
+.liner{
+    /* background-image: linear-gradient( 45deg ,  rgba(170, 93, 93 , 0.4) 20%  , rgba(111, 240, 111,0.4) 30% , rgba(224, 67, 40,0.4) , rgba(61, 61, 192,0.4)) , url(../images/shutterstock_277750193.jpg); */
+
+/* background-image: linear-gradient( 45deg ,  blue 20%, green 20%, red 10% , tomato);
+    background-size: cover;
+background-position: center center;
+    height: 100vh; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************************************************/
+/* css Grid  */
+
+
+.parent{
+    height: 80vh;
+    border: 4px solid rgb(14, 13, 13);
+    display: grid;
+    /* grid-template-columns:  1fr 2fr 1fr 3fr
+     ;
+     grid-template-rows: 100px 100px; */
+     /* grid-template-columns: 200px auto auto 200px; */
+     grid-template-areas:  
+     "item1 item2 item2 item2 item2 item3"  
+     "item1  item4 item4   item5 item5 item6"
+     "item1 item7 item7 item8 item8 item6 "
+     ;
+     gap: 10px;
+
+     /* justify-content: space-evenly; */
+     /* justify-items:center; */
+     /* justify-content: center; */
+     /* align-items: center; */
+     /* align-content: flex-start; */
+
+}
+.one{
+    background-color: tomato;
+    /* width: 50%; */
+    grid-area: item1;
+}
+.two{
+    
+    background-color:  rgb(19, 170, 82);
+    grid-area: item2 ;
+}
+.three{
+    background-color: rgb(95, 41, 131);
+    grid-area: item3 ;
+
+}
+.four{
+    background-color: rgb(30, 168, 111);
+    grid-area: item4 ;
+    /* margin: auto; */
+
+}
+.five{
+    background-color: rgba(221, 187, 34, 0.719);
+    grid-area: item5 ;
+
+}
+
+.item6{
+    background-color: rgba(221, 187, 34, 0.719);
+    grid-area: item6 ;
+
+}
+.item7{
+    background-color: rgba(221, 187, 34, 0.719);
+    grid-area: item7 ;
+
+}
+.item8{
+    background-color: rgba(221, 187, 34, 0.719);
+    grid-area: item8 ;
+
+}
+
+
+.conatiner{
+    height: 80vh;
+    border: 3px solid red;
+    display: grid;
+    /* grid-template-rows: 100px 100px; */
+    grid-auto-rows: 100px;
+}
+.item1{
+    background-color: tomato;
+}
+.item2{
+    background-color: rgb(71, 255, 111);
+}
+.item3{
+    background-color: rgb(141, 71, 255);
+}
+.item4{
+    background-color: tan;
+}
+
+
+
+.parent2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 8px;
+}
+    
+.div1 {
+    grid-column: span 3 / span 3;
+}
+
+.div2 {
+    grid-row: span 2 / span 2;
+    grid-row-start: 2;
+}
+
+.div3 {
+    grid-column: span 2 / span 2;
+    grid-row-start: 2;
+}
+
+.div4 {
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+
+.div5 {
+    grid-column-start: 3;
+    grid-row-start: 3;
+}
+
+.div6 {
+    grid-column: span 3 / span 3;
+    grid-row-start: 4;
+}
+        
