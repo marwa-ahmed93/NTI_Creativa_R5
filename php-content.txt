@@ -408,6 +408,21 @@ FOREIGN key(student_id)REFERENCES students(id),
 
 
 
+
+CREATE TABLE student_subject(
+`student_id` int ,
+`subject_id` int ,
+PRIMARY KEY(`student_id` , `subject_id`)    ,
+ CONSTRAINT relation_one   
+ FOREIGN KEY(`student_id`)   REFERENCES students(`id`) ON UPDATE CASCADE ON DELETE CASCADE ,
+    
+ CONSTRAINT relation_two   
+ FOREIGN KEY(`subject_id`)   REFERENCES subjects(`id`) ON UPDATE CASCADE ON DELETE CASCADE
+)
+
+
+
+
 /////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -776,7 +791,7 @@ END //
  //////////////////////////////////////////////////////////////////////////////////////
 
 -----------------------view---------------------------
-CREATE new users_info
+CREATE view users_info
 AS SELECT * FROM users
 
 
